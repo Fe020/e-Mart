@@ -5,62 +5,115 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Register</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2; /* Light gray background */
+            margin: 0;
+            padding: 0;
+        }
 
-    <center><h1 style="background-color: black; color:wheat;">e-Mart</h1></center>
+        h1 {
+            background-color: #3498db;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            margin: 0;
+        }
 
+        section {
+            text-align: center;
+            margin: 150px;
+            margin-top: 25px;
+            margin-bottom: 25px;
+            padding: 20px;
+            background-color: #fff; /* White background color */
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+            color: #333; /* Dark gray text color */
+        }
+
+        input[type="text"],
+        input[type="date"],
+        select {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin-bottom: 15px;
+        }
+
+        input[type="radio"] {
+            margin-right: 5px;
+        }
+
+        input[type="submit"] {
+            background-color: #3498db; /* Blue background color */
+            color: #fff; /* White text color */
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #fff; /* White background color on hover */
+            color: #3498db; /* Blue text color on hover */
+        }
+
+        small {
+            font-style: italic;
+            color: #333; /* Dark gray text color */
+        }
+
+        p {
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
-    <section style="text-align: center;">
-        <form >
+    <h1>e-Mart</h1>
 
+    <section>
+        <center><form style="width: 60vw;">
             <p id="group1">
-                choose your gender: <br><br>
+                Choose your gender: <br><br>
                 <input type="radio" value="M" name="group1">
                 <label for="group1">Male</label>
                 <input type="radio" value="F" name="group1">
                 <label for="group1">Female</label>
                 <input type="radio" value="o" name="group1">
-                <label for="group1">Other</label> 
+                <label for="group1">Other</label>
             </p>
-            <label for="iam">Choose: </label>
-            <br>
+            <label for="iam">Choose: </label><br>
             <select name="chs" id="iam"><br>
-                <option value="1">Mr. </option>
-                <option value="2">Mrs. </option>
-                <option value="3">none </option>
-            </select>
-            <br>
-            <br>
-            <label for="n">Name: </label>
-            <br>
-            <input type="text" id="n">
-            <br><br>
-            <label for="dob">DOB: </label> <br>
-            <input type="date" id="dob">
-            <br><br>
-            <!-- <label for="a">Age: </label>
-            <br>
-            <input type="text" id="a">
-            <br><br> -->
-            <label for="e">e-mail: </label>
-            <br>
-            <input type="text" id="e">
-            <br><br>
-            <label for="p">Password: </label>
-            <br>
-            <input type="text" id="p"><br>
-            <small> <i> (choose a strong password) </i></small>
-            <br><br>
-            <label for="p">Conform Password: </label>
-            <br>
-            <input type="text" id="p"><br>
-            <br><br>
-            <input type="submit" value="Register">
-            <br>
+                <option value="1">Mr.</option>
+                <option value="2">Mrs.</option>
+                <option value="3">None</option>
+            </select><br><br>
+            <label for="n">Name: </label><br>
+            <input type="text" id="n"><br><br>
+            <label for="dob">DOB: </label><br>
+            <input type="date" id="dob"><br><br>
+            <label for="e">E-mail: </label><br>
+            <input type="text" id="e"><br><br>
+            <label for="p">Password: </label><br>
+            <input type="password" id="p"><br>
+            <small><i>(Choose a strong password)</i></small><br><br>
+            <label for="cp">Confirm Password: </label><br>
+            <input type="password" id="cp"><br><br>
+            <input type="submit" value="Register"><br>
         </form>
+    </center>
     </section>
-    <p style="text-align: center;">
-        Already Have An Account?<a href="login.html">Login</a>
+
+    <p>
+        Already have an account? <a href="login.html">Login</a>
     </p>
 </body>
 </html>

@@ -1,56 +1,132 @@
-<fieldset>
-    <legend> <h1>Job Application</h1></legend>
-    <form>
-      
-      <label for="nm">Name: </label><br>
-      <input type="text" id="nm">
-              <br><br>
-      <label for="em">e-Mail: </label><br>
-      <input type="email" id="em">
-      <br><br>
-      
-      <label for="tel">Phone number: </label><br>
-      <input type="tel" id="tel">
-      <br><br>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Application</title>
+    
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 0;
+        }
 
-      
-      
-      <label for="res">Resume: </label><br>
-      <input type="file" id="res">
-      <br><br>
-      
-      
-      <label for="exp">Experience(years): </label><br>
-      <input type="number" id="exp" min="0" max="50">
-      <br><br>
-      
-      <fieldset>
-        <legend>Slills: <br></legend>
-        <label for="H">HTML</label><br>
-        <input type="checkbox" id="H"><br><br>
-        <label for="css">CSS</label><br>
-        <input type="checkbox" id="css"><br><br>
-        <label for="js">JAVASCRIPT</label><br>
-        <input type="checkbox" id="js">
-      </fieldset>
-      <label for="he">Highest Education <br></label>
-        <select id="he">
-          <option value="1">High School</option> <br>
-          <option value="2">Undergraduate</option><br>
-          <option value="3">Graduatiion</option><br>
-          <option value="4">Post-Graduatiion</option><br>
-        </select>
+        fieldset {
+            border: 2px solid #3498db;
+            border-radius: 10px;
+            padding: 20px;
+            width: 80%;
+            margin: 20px auto;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
 
-        <p id="rd">Availibility: <br>
-        <label for="rd">Full-time</label>
-        <input type="radio" name="avl"><br>
-        <label for="rd">Part-time</label>
-        <input type="radio" name="avl">
-        </p>
+        legend {
+            font-size: 24px;
+            color: #3498db;
+            border: 1px solid #3498db;
+            border-radius: 5px;
+            padding: 5px 10px;
+            background-color: #fff;
+        }
 
-        <label for="add">Additional Comments: </label> <br>
-        <textarea name="additional" id="add" cols="40" rows="10"></textarea>
-        <br><br>
-        <button style="text-align: center;">Submit Response</button>
-      </form>
-  </fieldset>
+        form {
+            text-align: center;
+        }
+
+        label {
+            font-weight: bold;
+            color: #333;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="tel"],
+        input[type="number"],
+        input[type="file"],
+        select,
+        textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin: 5px 0;
+        }
+
+        input[type="checkbox"],
+        input[type="radio"] {
+            margin-right: 5px;
+        }
+
+        button {
+            background-color: #3498db;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #fff;
+            color: #3498db;
+        }
+    </style>
+</head>
+<body>
+    <fieldset>
+        <legend><h1>Job Application</h1></legend>
+        <form>
+            <label for="nm">Name:</label><br>
+            <input type="text" id="nm"><br><br>
+            
+            <label for="em">e-Mail:</label><br>
+            <input type="email" id="em"><br><br>
+            
+            <label for="tel">Phone number:</label><br>
+            <input type="tel" id="tel"><br><br>
+            
+            <label for="res">Resume:</label><br>
+            <input type="file" id="res"><br><br>
+            
+            <label for="exp">Experience (years):</label><br>
+            <input type="number" id="exp" min="0" max="50"><br><br>
+            
+            <fieldset>
+                <legend>Skills:</legend>
+                <label for="H">HTML</label>
+                <input type="checkbox" id="H"><br>
+                
+                <label for="css">CSS</label>
+                <input type="checkbox" id="css"><br>
+                
+                <label for="js">JavaScript</label>
+                <input type="checkbox" id="js">
+            </fieldset>
+            
+            <label for="he">Highest Education:</label><br>
+            <select id="he">
+                <option value="1">High School</option>
+                <option value="2">Undergraduate</option>
+                <option value="3">Graduation</option>
+                <option value="4">Post-Graduation</option>
+            </select><br><br>
+            
+            <p id="rd">Availability:</p>
+            <label for="full-time">Full-time</label>
+            <input type="radio" id="full-time" name="availability"><br>
+            
+            <label for="part-time">Part-time</label>
+            <input type="radio" id="part-time" name="availability"><br><br>
+            
+            <label for="add">Additional Comments:</label><br>
+            <textarea name="additional" id="add" cols="40" rows="10"></textarea><br><br>
+            
+            <button>Submit Response</button>
+        </form>
+    </fieldset>
+</body>
+</html>

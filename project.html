@@ -6,154 +6,286 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>e-Mart</title>
     
-    <center><h1 style="background-color: black; color:wheat;">e-Mart</h1></center>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            background-color: #3498db;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            margin: 0;
+        }
+
+        nav {
+            background-color: #333;
+            color: #fff;
+            text-align: right;
+            padding: 10px;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin-right: 20px;
+        }
+
+        nav a:hover {
+            color: #3498db;
+        }
+
+        h3 {
+            color: #333;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        li {
+            list-style: none;
+            text-align: center;
+        }
+
+        li a {
+            text-decoration: none;
+            color: #333;
+            display: block;
+            margin: 10px 0;
+            padding: 10px;
+            background-color: #fff;
+            border-radius: 5px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        li a:hover {
+            background-color: #3498db;
+            color: #fff;
+        }
+
+        h2 {
+            text-align: center;
+            color: #333;
+            margin-top: 20px;
+        }
+
+        p {
+            text-align: center;
+            color: #333;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        th, td {
+            padding: 10px;
+            text-align: center;
+            border: 1px solid #333;
+        }
+
+        th {
+            background-color: #3498db;
+            color: #fff;
+        }
+
+        strong {
+            color: #3498db;
+        }
+
+        h2.head {
+            color: #3498db;
+            background-color: #fff;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        p.para {
+            color: #3498db;
+            text-align: center;
+        }
+
+        form {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        button {
+            background-color: #3498db;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #fff;
+            color: #3498db;
+        }
+
+        h4 {
+            text-align: center;
+            color: #333;
+            margin-top: 20px;
+        }
+
+        ul {
+            text-align: center;
+            list-style: none;
+            padding: 0;
+        }
+
+        ul li {
+            margin-bottom: 10px;
+        }
+
+        ul li a {
+            text-decoration: none;
+            color: #3498db;
+        }
+
+        ul li a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            text-align: center;
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+        }
+
+        #useID {
+            background-color: #333;
+            text-align: center;
+            color: #fff;
+            padding: 10px;
+            margin: 0;
+        }
+    </style>
 </head>
 <body>
-
-
-    <table style="background-color: black; color: wheat"; align= "right">
-        <tr>
-            <td ><a style="color: wheat;" href="login.html">Login/Register</a></td>
-        </tr>
-        <br><br>
-        <tr><td>
-            <a href="joinus.html" style="color: wheat; background-color: black; display: block;">We Are Hiring!</a>
-        </td></tr>
-    </table>
-
-    <h3 style="color: black">Choose The Product Type</h3>
-    <li> <a href="laptop.html">Laptop</a> </li>
-    <li> <a href="smatphone.html">Smart Phones</a></li>
-    <li> <a href="other.html">Others</a></li>
-    <h3 style="color: black;">our most viewed products</h3>
+    <h1>e-Mart</h1>
     
-    <table border="1">
-        <tablehead>
-            <th>Laptops</th>
-            <th>Phones</th>
-            <th>Other</th>
-        </tablehead>
+    <nav>
+        <a href="login.html">Login/Register</a>
+        <a href="joinus.html">We Are Hiring!</a>
+    </nav>
+
+    <h3>Choose The Product Type</h3>
+    <ul>
+        <li><a href="laptop.html">Laptop</a></li>
+        <li><a href="smatphone.html">Smart Phones</a></li>
+        <li><a href="other.html">Others</a></li>
+    </ul>
+
+    <h3>Our Most Viewed Products</h3>
+    
+    <table>
+        <thead>
+            <tr>
+                <th>Laptops</th>
+                <th>Phones</th>
+                <th>Other</th>
+            </tr>
+        </thead>
         <tbody>
-        <tr>
-            <td><a href="https://www.apple.com/in/macbook-pro/" target="_blank">MAC</a></td>
-            <td><a href="Iphone.html" target="_blank"> iPhone</a></td>
-            <td><a href="https://www.flipkart.com/search?q=trimmer&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off" target="_blank">Trimmers</a></td>
-        </tr>
-        <tr>
-            <td><a href="https://www.hp.com/in-en/shop/laptops-tablets.html?gclsrc=aw.ds&product_list_order=price_asc" target="_blank">HP</a></td>
-            <td><a href="oneplus.html" target="_blank"> ONE plus</a></td>
-            <td><a href="https://www.flipkart.com/electric-jugheatertravel-kettles/pr?sid=j9e,m38,xrv" target="_blank"> kettels</td>
-        </tr>
+            <tr>
+                <td><a href="https://www.apple.com/in/macbook-pro/" target="_blank">MAC</a></td>
+                <td><a href="Iphone.html" target="_blank">iPhone</a></td>
+                <td><a href="https://www.flipkart.com/search?q=trimmer&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off" target="_blank">Trimmers</a></td>
+            </tr>
+            <tr>
+                <td><a href="https://www.hp.com/in-en/shop/laptops-tablets.html?gclsrc=aw.ds&product_list_order=price_asc" target="_blank">HP</a></td>
+                <td><a href="oneplus.html" target="_blank">ONE plus</a></td>
+                <td><a href="https://www.flipkart.com/electric-jugheatertravel-kettles/pr?sid=j9e,m38,xrv" target="_blank">Kettles</a></td>
+            </tr>
         </tbody>
     </table>
 
-        
-        <p style="color: rgb(0, 0, 0);">total Number Of Active Users: 2 <sup>0</sup> 😔 </p>   
-        ____________________________________________________________________________________________________________________________________________________________________________
-        <article class="ARTICLE">
-            <article> <h2>Top Electronic Items to Keep You Connected and Entertained</h2>
-                
-                In today's fast-paced world, staying connected and entertained is more important than ever. Luckily, the electronics industry is constantly evolving, providing us with the latest and greatest gadgets to help us achieve these goals. Whether you're a tech enthusiast or just looking for some new gadgets to make your life easier, here are some of the top electronic items that you should consider adding to your collection.
-                
-                <h3>1.Smartphones</h3>
-                Smartphones are an essential item for anyone who wants to stay connected to the world. From checking your email and social media accounts to making phone calls and taking pictures, smartphones are incredibly versatile devices that can help you do almost anything. With the latest models offering features like high-quality cameras, fast processors, and long battery life, upgrading to a new smartphone is always a good idea.
-                
-            <h3>2.Tablets</h3>
-            Tablets are another must-have electronic item for anyone who needs a larger screen than a smartphone can provide. They're great for browsing the web, watching videos, and reading books or magazines. With their portability and versatility, tablets are perfect for taking on the go, whether you're traveling or just need to work on something while you're out and about.
-            
-            <h3>3.Laptops</h3>
-            Laptops are the ultimate portable computing device, providing the power and performance you need to work, play, or create from anywhere. With the latest models offering features like high-speed processors, stunning graphics, and long battery life, laptops are a great investment for anyone who needs a reliable device for work or entertainment.<br/>
-            
-            <br/>In conclusion, staying connected and entertained is more important than ever, and the electronics industry has provided us with a variety of devices to help us achieve these goals. Whether you're looking for a new smartphone, tablet, laptop, smartwatch, wireless headphones, or smart speaker, there's no shortage of options to choose from. So why not invest in some of these top electronic items today and take your connectivity and entertainment to the next level?
-            </article>
-        </article>
-
-
-
-        ____________________________________________________________________________________________________________________________________________________________________________
-        <p><h2 style="text-align: center;">Pricing details</h2></br> <i>(assuming 100 dollars is your selected product price)</i></p>
+    <p>Total Number Of Active Users: 20 😊</p>
     
-        <table border="1">
-            <tablehead>
-                <th>GST</th>
-                <th>Percent(%)</th>
-                <th>in Dollars</th>
-            </tablehead>
-            <tbody>
-                <tr>
-                    <td>GST</td>
-                    <td>2%</td>
-                    <td>2</td>
-                </tr>
-                <tr>
-                    <td>SGST</td>
-                    <td>1%</td>
-                    <td>1</td>
-                </tr>
-                <tr>
-                    <td colspan="2">Final Bill</td>
-                    <td><strong>103 $</strong></td>
-                </tr>
-            </tbody>
-        </table>
-        <P>So, the final price of selected product will be 103 dollars</P>
-        ____________________________________________________________________________________________________________________________________________________________________________
-        
+    <article class="ARTICLE">
+        <article>
+            <h2>Top Electronic Items to Keep You Connected and Entertained</h2>
+                
+            <p>In today's fast-paced world, staying connected and entertained is more important than ever. Luckily, the electronics industry is constantly evolving, providing us with the latest and greatest gadgets to help us achieve these goals. Whether you're a tech enthusiast or just looking for some new gadgets to make your life easier, here are some of the top electronic items that you should consider adding to your collection.</p>
+                
+            <h3>1. Smartphones</h3>
+            <p>Smartphones are an essential item for anyone who wants to stay connected to the world. From checking your email and social media accounts to making phone calls and taking pictures, smartphones are incredibly versatile devices that can help you do almost anything. With the latest models offering features like high-quality cameras, fast processors, and long battery life, upgrading to a new
+                <p>smartphone is always a good idea.</p>
 
-        <style>
-            h2.head {
-                color: rgb(51, 240, 127);
-                background-color: aliceblue;
-                text-align: center;
-            }
-            p.para{
-                color:blue;
-            }
-        </style>
-        <h2 class="head">QnA</h2>
-        <p class="para">How Can I Help You😉</p>
-
-        <form>
-
-        </form>
-
-            <form>           
-                <label for="querry">Query: </label> <br>
-                <textarea name="hey" id="hi" cols="50" rows="10" placeholder="enter text here..."></textarea>                <br>
-                <br>
-                <button style="background-color: black; color: wheat; text-align: center;">Submit</button>
-            </form>
-
-        <p>
-            <h3>Most Repeated Question And Answers </h3>
-            <pre>
-Q1: How long does it take for e-Mart to deliver the products?
-A1: The delivery time for e-Mart depends on various factors such as your location <a href="QnA.html">see more...</a>
-            </pre></p>
-        ____________________________________________________________________________________________________________________________________________________________________________
-        <h4> <u>You Can Reach Me At</u> </h4>
-        <ul>
-            <li><a href="https://www.youtube.com/@future_engineer020">Youtube</a></li><!-- anchor tab is used to link one  webpage to another-->
-            <li><a href="https://www.instagram.com/aayush.020/?igshid=YmMyMTA2M2Y%3D">Instagram</a></li>
-            <li><a href="mailto: aak41375@gmail.com">mail</a></li>
-            <li><a href="tel:8084097691">call us</a></li>
-        </ul>
-        ____________________________________________________________________________________________________________________________________________________________________________
-        <h4><center> <u>Authorization</u> </center></h4>
-    <a href="">licence and certificates</a>
-    <div style="text-align: right;"><a href="">copyright <sup>r</sup></a></div>
-
-    <style>
-        #useID
-        {
-            background-color: black;
-            text-align: center;
-            text-shadow: 0vi;
-            color: burlywood;
-            padding: 0vmin;
-        }
-    </style>
-    <h2 id="useID">"Thanks for stopping by!!!"</h2>
-</body>
-
-</html>
+                <h3>2. Tablets</h3>
+                <p>Tablets are another must-have electronic item for anyone who needs a larger screen than a smartphone can provide. They're great for browsing the web, watching videos, and reading books or magazines. With their portability and versatility, tablets are perfect for taking on the go, whether you're traveling or just need to work on something while you're out and about.</p>
+                
+                <h3>3. Laptops</h3>
+                <p>Laptops are the ultimate portable computing device, providing the power and performance you need to work, play, or create from anywhere. With the latest models offering features like high-speed processors, stunning graphics, and long battery life, laptops are a great investment for anyone who needs a reliable device for work or entertainment.</p>
+                
+                <p>In conclusion, staying connected and entertained is more important than ever, and the electronics industry has provided us with a variety of devices to help us achieve these goals. Whether you're looking for a new smartphone, tablet, laptop, smartwatch, wireless headphones, or smart speaker, there's no shortage of options to choose from. So why not invest in some of these top electronic items today and take your connectivity and entertainment to the next level?</p>
+                </article>
+                </article>
+                
+                <h2 class="head">QnA</h2>
+                <p class="para">How Can I Help You? 😉</p>
+                
+                <form>           
+                    <label for="query">Query:</label><br>
+                    <textarea name="query" id="query" cols="50" rows="10" placeholder="Enter your query here..."></textarea><br><br>
+                    <button>Submit</button>
+                </form>
+                
+                <p>
+                <h3>Most Repeated Questions and Answers</h3>
+                <pre>
+                Q1: How long does it take for e-Mart to deliver the products?
+                A1: The delivery time for e-Mart depends on various factors such as your location. <a href="QnA.html">See more...</a>
+                </pre>
+                </p>
+                
+                <h4><u>You Can Reach Me At</u></h4>
+                <ul>
+                    <li><a href="https://www.youtube.com/@future_engineer020">Youtube</a></li>
+                    <li><a href="https://www.instagram.com/aayush.020/?igshid=YmMyMTA2M2Y%3D">Instagram</a></li>
+                    <li><a href="mailto: aak41375@gmail.com">Email</a></li>
+                    <li><a href="tel:8084097691">Call us</a></li>
+                </ul>
+                
+                <footer>
+                    <h4><u>Authorization</u></h4>
+                    <a href="#">License and Certificates</a>
+                    <div style="text-align: right;"><a href="#">Copyright ©</a></div>
+                </footer>
+                
+                <style>
+                    #useID {
+                        background-color: #333;
+                        text-align: center;
+                        color: #fff;
+                        padding: 10px;
+                        margin: 0;
+                    }
+                </style>
+                
+                <h2 id="useID">Thanks for stopping by!!!</h2>
+                </body>
+                </html>
+                
